@@ -1,40 +1,49 @@
-# **8 Puzzle Solver with AI Powered Search Algorithms**
+# **8 Puzzle Solver with AI-Powered Search Algorithms**
 
-## **Περιγραφή**
-Πρόγραμμα σε **C++** που λύνει το 8-puzzle με 4 αλγορίθμους αναζήτησης (DFS, BFS, Best-FS, A*). Χρησιμοποιεί ευριστικές στρατηγικές (απόσταση Manhattan) και δομές δεδομένων (στοίβα, ουρά, ουρά προτεραιότητας) για να βρει τη βέλτιστη ακολουθία κινήσεων, επιδεικνύοντας την αποτελεσματικότητα των αλγορίθμων ΤΝ σε συνδυαστικά προβλήματα.
+## **Description**
+
+A **C++** program that solves the **8-puzzle** using four search algorithms (**DFS, BFS, Best-FS, A***).
+It employs **heuristic strategies** (Manhattan distance) and **data structures** (stack, queue, priority queue) to find the optimal sequence of moves — demonstrating the efficiency of **AI algorithms** in combinatorial problem solving.
 
 ---
 
 ### 🚀 **Project Overview**
-Αυτό το project υλοποιεί **τέσσερις αλγορίθμους αναζήτησης** (DFS, BFS, Best FS, A*) για την επίλυση του κλασικού προβλήματος **8-puzzle**, όπου ο στόχος είναι να ταξινομηθούν πλακίδια σε ένα 3x3 πλέγμα με ελάχιστες κινήσεις.
-- **Κύρια πρόκληση**: Μετακίνηση πλακιδίων γύρω από το κενό κελί (0) για να επιτευχθεί η τελική διάταξη.
-- **Εφαρμογή AI**: Διερεύνηση της συμπεριφοράς αλγορίθμων αναζήτησης σε συνδυαστικά προβλήματα.
+
+This project implements **four search algorithms** — DFS, BFS, Best FS, and A* — to solve the classic **8-puzzle problem**, where the goal is to arrange tiles in a 3×3 grid using the fewest possible moves.
+
+* **Main challenge**: Move the tiles around the empty space (0) to reach the target configuration.
+* **AI Application**: Analyze the behavior and efficiency of different search algorithms in combinatorial problems.
 
 ---
 
 ### 🔍 **Key Features**
-- **Υποστηριζόμενοι Αλγόριθμοι**:
-  - **DFS & BFS**: Γραμμικοί αλγόριθμοι με χρήση στοίβας/ουράς.
-  - **Best FS**: Βελτιστοποίηση με **ευριστική συνάρτηση Manhattan** για προτεραιότητα καταστάσεων.
-  - **A***: Συνδυασμός βάθους και ευριστικής για βέλτιστη απόδοση.
-- **Δομές Δεδομένων**: Ουρές προτεραιότητας, hash maps, και διαχείριση κλειστών συνόλων.
-- **Αποδοτική Μοντελοποίηση**: Κλάση `State` για αναπαράσταση καταστάσεων, κινήσεων, και υπολογισμούς ευριστικών.
+
+* **Supported Algorithms**:
+
+  * **DFS & BFS** – Linear search algorithms using stack/queue structures.
+  * **Best FS** – Greedy strategy guided by the **Manhattan distance heuristic**.
+  * **A*** – Combines path cost and heuristic evaluation for **optimal performance**.
+* **Data Structures**: Uses priority queues, hash maps, and closed-set management for efficient state exploration.
+* **Efficient Modeling**: A `State` class models puzzle configurations, possible moves, and heuristic computations.
 
 ---
 
 ### 🛠️ **Technical Highlights**
-- **Ευριστικές Συναρτήσεις**:
-  - **Manhattan Distance**: Υπολογισμός της απόστασης κάθε πλακιδίου από τη θέση στόχου.
-  - **A* Optimization**: Εξισορρόπηση κόστους διαδρομής (βάθος) και ευριστικής.
-- **Δυναμική Επέκταση**: Δημιουργία παιδιών-καταστάσεων μέσω ολισθήσεων πλακιδίων (πάνω, κάτω, αριστερά, δεξιά).
+
+* **Heuristic Functions**:
+
+  * **Manhattan Distance** – Calculates the total distance of all tiles from their target positions.
+  * **A* Optimization** – Balances path depth (g-cost) and heuristic (h-cost) to minimize total cost (f = g + h).
+* **Dynamic Expansion**: Automatically generates child states by sliding tiles **up, down, left, or right**.
 
 ---
 
 ### 📂 **Code Structure**
-- **main.cpp**: Διαχείριση εισόδου/εξόδου, επιλογή αλγορίθμου.
-- **State.h/cpp**: Κλάση για την αναπαράσταση του πίνακα, μεθόδους κίνησης, και ευριστικούς υπολογισμούς.
+
+* **`main.cpp`** – Handles user input/output and algorithm selection.
+* **`State.h / State.cpp`** – Defines the `State` class for representing puzzle states, moves, and heuristic functions.
 
 ---
 
 **🏷️ Tags**: `AI`, `Search Algorithms`, `8-Puzzle`, `C++`, `Manhattan Distance`, `Pathfinding`
-**🌟 Concept**: *"Ένα εκπαιδευτικό εργαλείο για την κατανόηση ιεραρχίας και απόδοσης αλγορίθμων αναζήτησης στην Τεχνητή Νοημοσύνη."*
+**🌟 Concept**: *"An educational tool designed to explore the hierarchy and efficiency of search algorithms in Artificial Intelligence."*
